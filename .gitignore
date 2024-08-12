@@ -1,0 +1,42 @@
+# 依赖目录
+node_modules/
+
+# 构建输出
+dist/
+
+# 日志
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 运行时数据
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# 目录用于测试输出覆盖率
+coverage/
+
+# IDE / 编辑器目录
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 操作系统文件
+.DS_Store
+Thumbs.db
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# TypeScript 编译中间文件
+*.tsbuildinfo
+
+# Yarn
+.yarn-integrity
+package-lock.json
