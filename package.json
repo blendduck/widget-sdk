@@ -11,6 +11,7 @@
     "lint": "eslint *.ts*"
   },
   "files": [
+    "src",
     "lib",
     "dist",
     "es"
