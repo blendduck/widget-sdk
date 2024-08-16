@@ -11,6 +11,7 @@ export type WidgetParameters<T extends z.ZodObject<any>> = z.infer<T>;
 export type AnimationParameters<T extends z.ZodObject<any> | undefined = undefined> = {
   frame: number,
   durationInFrames: number,
+  easing: string,
   data: T extends z.ZodObject<any> ? z.infer<T> : undefined,
 }
 

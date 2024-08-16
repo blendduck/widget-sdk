@@ -1,6 +1,8 @@
 import React from 'react';
 import * as z from "zod";
 export * from "./context";
+export * from "./methods";
+export * from "./signal";
 
 export interface InspectorDefinition<T extends z.ZodObject<any>> {
   schema: T,
