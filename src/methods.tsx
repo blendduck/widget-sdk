@@ -8,7 +8,6 @@ type MethodgetGradientStyle = (color: any, textMask?: boolean) => void;
 type MethodloadFont = (font: string) => Promise<void>;
 type MethodHotUpdate = () => void;
 
-
 // interpolate
 let interpolateImpl: MethodInterpolate;
 export const interpolate: MethodInterpolate = (t, from, to, easing) => {
