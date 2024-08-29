@@ -25,6 +25,7 @@ export interface WidgetDefinition<
 > {
   name: string;
   Widget: React.FC;
+  defaults?: any;
   parameters?: InspectorDefinition<T>;
   appear?: InspectorDefinition<U extends z.ZodObject<any> ? U : never>;
   disappear?: InspectorDefinition<V extends z.ZodObject<any> ? V : never>;

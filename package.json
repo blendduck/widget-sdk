@@ -11,10 +11,10 @@
     "lint": "eslint *.ts*"
   },
   "files": [
-    "src",
     "lib",
     "dist",
-    "es"
+    "es",
+    "src"
   ],
   "source": "src/index.tsx",
   "main": "dist/index.js",
@@ -30,6 +30,7 @@
   "devDependencies": {
     "eslint": "^8.46.0",
     "eslint-config-custom": "*",
+    "@repo/typescript-config": "workspace:*",
     "@types/react": "^18.2.18"
   }
 }
