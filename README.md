@@ -237,7 +237,7 @@ const Panel: React.FC = () => {
   const handleClick = () => {
     BlendDuckWidgetSDK.dispatchEvent("addWidget", {
       scope,
-      widgetId: 'test', // 为自己开发的 widget 的 ID
+      widgetId: 'test', // your widget id
     });
   }
 
