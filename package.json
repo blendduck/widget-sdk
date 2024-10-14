@@ -1,8 +1,7 @@
 {
   "name": "@blendduck/widget-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BlendDuck Widget SDK",
-  "private": true,
   "exports": {
     ".": "./src/index.tsx"
   },

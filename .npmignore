@@ -1,0 +1,28 @@
+# 源代码
+src/
+
+# 测试
+tests/
+*.test.ts
+scripts/
+
+# 配置文件
+tsconfig.json
+jest.config.js
+.eslintrc.js
+.prettierrc
+.lintstagedrc
+
+# Git 相关
+.gitignore
+.git/
+
+# 编辑器配置
+.vscode/
+.idea/
+
+# 其他
+*.log
+.DS_Store
+coverage/
+.husky/
