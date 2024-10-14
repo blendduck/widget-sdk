@@ -1,6 +1,6 @@
 {
   "name": "@blendduck/widget-sdk",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "BlendDuck Widget SDK",
   "private": true,
   "exports": {
@@ -8,7 +8,9 @@
   },
   "scripts": {
     "watch": "tsc -w",
-    "lint": "eslint *.ts*"
+    "lint": "eslint *.ts*",
+    "build": "tsup src/index.tsx --format cjs,esm --dts",
+    "publish": "npm publish --access public --registry https://registry.npmjs.org"
   },
   "files": [
     "lib",
@@ -21,16 +23,23 @@
   "types": "dist/index.d.ts",
   "repository": {},
   "license": "UNLICENSED",
+  "dependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "remotion": ">=4.0.0",
+    "zod": "^3.22.4"
+  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
     "remotion": ">=4.0.0",
-    "zod": "*"
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "eslint": "^8.46.0",
     "eslint-config-custom": "*",
-    "@repo/typescript-config": "workspace:*",
-    "@types/react": "^18.2.18"
+    "@types/react": "^18.2.18",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
   }
 }
